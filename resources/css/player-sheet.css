@@ -1,16 +1,36 @@
-.player-sheet {
-
+.wp-block-create-block-player-sheet {
+    padding-bottom: 2em;
 }
 
-.wp-block-create-block-player-sheet h2 {
+.wp-block-create-block-player-sheet .player-name {
     display: inline-block;
     text-transform: uppercase;
     padding-right: 0.5em;
     padding-left: 0.5em;
-    font-size: clamp(1rem, 3vw, 3rem);
-    /*font-size: 3em;*/
-    margin: 0;
     font-family: var(--wp--preset--font-family--carlson);
+    background-color: black;
+
+}
+
+.wp-block-create-block-player-sheet .player-description {
+    padding-bottom: 1em;
+}
+
+.wp-block-create-block-player-sheet .player-image {
+    height: 250px;
+    width: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.wp-block-create-block-player-sheet .player-attributes .emoji {
+    width: 1.5em !important;
+    height: 1.5em !important;
+}
+
+.wp-block-create-block-player-sheet .player-info{
+    flex-basis: min-content;
+    margin-bottom: 1.5em;
 }
 
 /*.player-card figure {*/
@@ -26,10 +46,3 @@
 /*    height: 300px;*/
 
 /*}*/
-
-.wp-block-create-block-player-sheet .player-image {
-    height: 250px;
-    width: 250px;
-    background-size: contain;
-    background-repeat: no-repeat;
-}

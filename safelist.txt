@@ -17,6 +17,23 @@ flex-col
 justify-center
 justify-end
 
+  flex-wrap
+  self-end
+  self-start
+  basis-full
+  max-w-lg
+  self-stretch
+  max-w-2xl
+  lg:max-w-2xl
+  order-last
+  lg:order-none
+  lg:justify-end
+  lg:order-first
+  grow
+  lg:order-none
+
+
+
 grid
 grid-cols-2
 md:grid-cols-2
@@ -31,11 +48,32 @@ col-start-3
 md:col-start-3
 md:order-last
 
+md:grid-cols-8
+md:col-span-3
+md:col-span-5
+
+
+lg:grid-cols-8
+lg:col-span-3
+lg:col-span-5
+lg:order-last
+lg:text-5xl
+
+lg:grid-cols-2
+
+
+gap-2
+
+
+
 text-5xl
 text-6xl
 text-7xl
 md:text-9xl
 leading-6
+leading-4
+md:text-7xl
+
 
 px-2
 px-4
@@ -60,5 +98,6 @@ py-12
 py-14
 
 md:mt-2
+mt-3
 mt-5
 mt-8

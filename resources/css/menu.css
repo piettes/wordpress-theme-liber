@@ -1,0 +1,18 @@
+
+.menu-item+.current_page_item {
+    /*color: white !important;*/
+    text-decoration: underline;
+}
+
+.menu-item a img {
+    display: inline-block;
+}
+
+.menu-item-has-children .sub-menu {
+    position: absolute;
+    display: none;
+}
+
+.menu-item-has-children:hover .sub-menu {
+    display: block;
+}

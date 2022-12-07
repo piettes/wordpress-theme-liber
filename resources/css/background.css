@@ -6,9 +6,6 @@
  /*blue 004fff*/
 /*yellow #ffee00*/
 /*acapulco 74b2a1*/
-h2 {
-    background-color: black;
-}
 
 #page {
     background-color: var(--wp--preset--color--third);
