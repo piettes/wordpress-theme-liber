@@ -8,6 +8,12 @@
 
 TailPress is a minimal boilerplate theme for WordPress using [Tailwind CSS](https://tailwindcss.com/).
 
+## Prod
+
+npm run production
+zip -r theme-liber.zip theme-liber -x theme-liber/node_modules/\* theme-liber/.git/\* theme-liber/.idea/\*
+
+
 ## Getting started
 
 ### Using the installer

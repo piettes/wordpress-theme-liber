@@ -1,0 +1,9 @@
+.liber-title {
+    /*font-size: 8em;*/
+    /*padding: 0.5em;*/
+    /*padding-left: 0.5em;*/
+    background-color: black;
+    clip-path: polygon(0 17%, 91% 8%, 100% 83%, 8% 91%);
+
+    font-family: var(--wp--preset--font-family--carlson);
+}

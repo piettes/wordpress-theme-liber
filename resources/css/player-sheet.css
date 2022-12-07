@@ -1,0 +1,35 @@
+.player-sheet {
+
+}
+
+.wp-block-create-block-player-sheet h2 {
+    display: inline-block;
+    text-transform: uppercase;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    font-size: clamp(1rem, 3vw, 3rem);
+    /*font-size: 3em;*/
+    margin: 0;
+    font-family: var(--wp--preset--font-family--carlson);
+}
+
+/*.player-card figure {*/
+/*    margin: unset!important;*/
+/*    max-width: 300px;*/
+/*    max-height: 300px;*/
+/*    overflow: hidden;*/
+/* }*/
+
+/*.player-card figure img {*/
+/*    object-fit: contain;*/
+/*    width: 300px;*/
+/*    height: 300px;*/
+
+/*}*/
+
+.wp-block-create-block-player-sheet .player-image {
+    height: 250px;
+    width: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

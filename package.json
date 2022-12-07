@@ -1,14 +1,14 @@
 {
 	"name": "theme-liber",
 	"version": "0.1.0",
-	"description": "Boilerplate WordPress theme with Tailwind CSS.",
-	"author": "Jeffrey van Rossum",
+	"description": "Boilerplate WordPress theme with Tailwind CSS for Liber",
+	"author": "Stéphane Piette",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/username/theme-liber"
+		"url": "https://github.com/piettes/theme-liber"
 	},
-	"theme_uri": "https://github.com/username/theme-liber",
-	"author_uri": "https://vanrossum.dev",
+	"theme_uri": "https://github.com/piettes/theme-liber",
+	"author_uri": "https://stephanepiette.com",
 	"text_domain": "theme-liber",
 	"license": "MIT",
 	"scripts": {

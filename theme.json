@@ -1,6 +1,7 @@
 {
-  "version": 1,
+  "version": 2,
   "settings": {
+    "appearanceTools": true,
     "layout": {
       "contentSize": "960px",
       "wideSize": "1280px"
@@ -10,13 +11,19 @@
         {
           "name": "Primary",
           "slug": "primary",
-          "color": "#0EA5E9"
+          "color": "#004fff"
         },
         {
           "name": "Secondary",
           "slug": "secondary",
-          "color": "#14B8A6"
+          "color": "#ffee00"
         },
+        {
+          "name": "Third",
+          "slug": "third",
+          "color": "#74b2a1"
+        },
+
         {
           "name": "Dark",
           "slug": "dark",
@@ -60,6 +67,39 @@
           "slug": "xxxl",
           "name": "3XL",
           "size": "1.875rem"
+        }
+      ],
+      "fontFamilies": [
+        {
+          "fontFace": [
+            {
+              "fontFamily": "personalservices",
+              "fontStretch": "normal",
+              "fontStyle": "normal",
+              "fontWeight": "200 900",
+              "src": [
+                "file:./fonts/personalservices/PersonalServices.ttf"
+              ]
+            }
+          ],
+          "fontFamily": "personalservices",
+          "name": "personalservices",
+          "slug": "personalservices"
+        },
+        {
+          "fontFace": [
+            {
+              "fontFamily": "carlson",
+              "fontStretch": "normal",
+              "fontStyle": "normal",
+              "src": [
+                "file:./fonts/carlson/CarlsonSans-Black.otf"
+              ]
+            }
+          ],
+          "fontFamily": "carlson",
+          "name": "carlson",
+          "slug": "carlson"
         }
       ]
     }
