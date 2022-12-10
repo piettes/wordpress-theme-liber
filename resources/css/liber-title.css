@@ -7,3 +7,46 @@
 
     font-family: var(--wp--preset--font-family--carlson);
 }
+
+.next-show-title {
+    text-align: center;
+}
+
+.next-show-title h2 {
+    display: inline-block;
+    text-transform: uppercase;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    font-family: var(--wp--preset--font-family--carlson);
+    background-color: black;
+    font-size: 2rem;
+}
+
+.yt-row {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.yt-button {
+    order: 999;
+    align-self: center;
+}
+
+.yt-light .yt-button {
+    color: #fff;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+
+.yt-button img {
+    position: initial;
+    display: initial;
+
+}
+
+.yt-urgency, .yt-eventtype {
+    display: none;
+}

@@ -107,3 +107,8 @@ md:mt-2
 mt-3
 mt-5
 mt-8
+
+
+justify-center
+sm:justify-start
+lg:justify-start

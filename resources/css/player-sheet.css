@@ -14,11 +14,12 @@
 
 .wp-block-create-block-player-sheet .player-description {
     padding-bottom: 1em;
+    text-align: justify;
 }
 
 .wp-block-create-block-player-sheet .player-image {
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
     background-size: contain;
     background-repeat: no-repeat;
 }
