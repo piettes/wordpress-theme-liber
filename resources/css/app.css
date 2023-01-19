@@ -3,10 +3,13 @@
 @import "tailwindcss/utilities";
 
 @import "custom.css";
-@import "background.css";
+@import "custom/background.css";
 @import "player-sheet.css";
-@import "liber-title.css";
-@import "menu.css";
+@import "custom/menu.css";
+@import "custom/yes-ticket.css";
+@import "custom/main.css";
+@import "custom/home.css";
+
 
 body {
     font-family: 'Montserrat', sans-serif;

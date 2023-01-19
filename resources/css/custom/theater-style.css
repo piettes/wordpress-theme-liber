@@ -1,0 +1,43 @@
+/**
+Not used
+ */
+
+.next-show-title {
+    /*text-align: center;*/
+    /*margin-bottom: 1rem;*/
+    display: inline-block;
+    /*background: url('data:image/svg+xml;charset=UTF-8,<svg width="100pt" fill="white" height="100pt" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="m50 12.5l-7.8203 18.727-18.695-7.7422 7.7656 18.75-18.75 7.7656 18.75 7.7656-7.7656 18.75 18.695-7.8945 7.8203 18.879 7.7656-18.75 18.75 7.7656-7.7656-18.75 18.75-7.7656-18.75-7.7656 7.7656-18.75-18.75 7.7656z"/>    </svg>');*/
+    background: url('data:image/svg+xml;charset=UTF-8,<svg width="100pt" fill="white" height="100pt" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"> <circle cx="50" cy="50" r="35" stroke="white" stroke-width="1" fill="white" />    </svg>');
+
+    background-size: 20px;
+    background-color: black;
+    background-repeat: round;
+    position: relative;
+    /*display: grid;*/
+    place-items: center;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.next-show-title::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: black;
+}
+
+.next-show-title h2 {
+    position: relative;
+    /*display: inline-block;*/
+    text-transform: uppercase;
+    font-family: var(--wp--preset--font-family--carlson);
+    /*background-color: black;*/
+    font-size: 2rem;
+    margin: 20px;
+    padding: 1em;
+    border: 1px solid;
+    border-radius: 5px;
+}

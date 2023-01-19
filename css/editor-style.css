@@ -48,12 +48,24 @@
   position: absolute
 }
 
+.relative {
+  position: relative
+}
+
 .order-last {
   order: 9999
 }
 
 .col-span-2 {
   grid-column: span 2 / span 2
+}
+
+.col-span-3 {
+  grid-column: span 3 / span 3
+}
+
+.col-span-5 {
+  grid-column: span 5 / span 5
 }
 
 .col-start-1 {
@@ -82,6 +94,11 @@
 
 .m-8 {
   margin: 2rem
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem
 }
 
 .my-3 {
@@ -179,6 +196,10 @@
   display: none
 }
 
+.h-48 {
+  height: 12rem
+}
+
 .h-1 {
   height: 0.25rem
 }
@@ -239,8 +260,16 @@
   flex-basis: 100%
 }
 
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}
+
 .cursor-pointer {
   cursor: pointer
+}
+
+.resize {
+  resize: both
 }
 
 .list-disc {
@@ -257,6 +286,14 @@
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr))
+}
+
+.grid-cols-7 {
+  grid-template-columns: repeat(7, minmax(0, 1fr))
+}
+
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr))
 }
 
 .flex-col {
@@ -289,6 +326,10 @@
 
 .gap-2 {
   gap: 0.5rem
+}
+
+.gap-1 {
+  gap: 0.25rem
 }
 
 .self-start {
@@ -376,6 +417,14 @@
 .bg-gray-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity))
+}
+
+.bg-contain {
+  background-size: contain
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat
 }
 
 .p-4 {
@@ -487,6 +536,10 @@
 
 .text-center {
   text-align: center
+}
+
+.text-justify {
+  text-align: justify
 }
 
 .text-5xl {

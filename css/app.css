@@ -556,8 +556,8 @@ video {
   }
 }
 
-.absolute {
-  position: absolute;
+.relative {
+  position: relative;
 }
 
 .order-last {
@@ -566,6 +566,14 @@ video {
 
 .col-span-2 {
   grid-column: span 2 / span 2;
+}
+
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+
+.col-span-5 {
+  grid-column: span 5 / span 5;
 }
 
 .col-start-1 {
@@ -594,6 +602,11 @@ video {
 
 .m-8 {
   margin: 2rem;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .my-3 {
@@ -691,6 +704,10 @@ video {
   display: none;
 }
 
+.h-48 {
+  height: 12rem;
+}
+
 .h-1 {
   height: 0.25rem;
 }
@@ -771,6 +788,14 @@ video {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.grid-cols-7 {
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -801,6 +826,10 @@ video {
 
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
 }
 
 .self-start {
@@ -888,6 +917,14 @@ video {
 .bg-gray-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+
+.bg-contain {
+  background-size: contain;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .p-4 {
@@ -999,6 +1036,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .text-5xl {
@@ -1346,58 +1387,6 @@ article > *:not(.entry-content),
 
 /*}*/
 
-.liber-title {
-  /*font-size: 8em;*/
-  /*padding: 0.5em;*/
-  /*padding-left: 0.5em;*/
-  background-color: black;
-  -webkit-clip-path: polygon(0 17%, 91% 8%, 100% 83%, 8% 91%);
-          clip-path: polygon(0 17%, 91% 8%, 100% 83%, 8% 91%);
-  font-family: var(--wp--preset--font-family--carlson);
-}
-
-.next-show-title {
-  text-align: center;
-}
-
-.next-show-title h2 {
-  display: inline-block;
-  text-transform: uppercase;
-  padding-right: 0.5em;
-  padding-left: 0.5em;
-  font-family: var(--wp--preset--font-family--carlson);
-  background-color: black;
-  font-size: 2rem;
-}
-
-.yt-row {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.yt-button {
-  order: 999;
-  align-self: center;
-}
-
-.yt-light .yt-button {
-  color: #fff;
-  border: none;
-  background: none;
-  padding: 0;
-  margin: 0;
-}
-
-.yt-button img {
-  position: initial;
-  display: initial;
-}
-
-.yt-urgency, .yt-eventtype {
-  display: none;
-}
-
 .menu-item+.current_page_item {
   /*color: white !important;*/
   text-decoration: underline;
@@ -1414,6 +1403,167 @@ article > *:not(.entry-content),
 
 .menu-item-has-children:hover .sub-menu {
   display: block;
+}
+
+.yt-row {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.yt-button {
+  order: 999;
+  align-self: center;
+}
+
+.yt-light .yt-button {
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  background: black;
+  padding: 1rem;
+  margin: 0;
+  border-radius: 0;
+}
+
+.yt-button::after {
+  content: '👈';
+  animation: slide-after 0.5s infinite linear;
+  display: inline-block
+}
+
+@keyframes slide-after {
+  from {
+    transform: translate(15px)
+  }
+
+  /*50% {*/
+
+  /*    transform: translate(0, 0px)*/
+
+  /*}*/
+
+  to {
+    transform: translate(0px, 0px)
+  }
+}
+
+.yt-button::before {
+  content: '👉';
+  animation:  slide-before 0.5s infinite linear;
+  display: inline-block
+}
+
+@keyframes slide-before {
+  from {
+    transform: translate(-15px)
+  }
+
+  /*50% {*/
+
+  /*    transform: translate(0, 0px)*/
+
+  /*}*/
+
+  to {
+    transform: translate(0px, 0px)
+  }
+}
+
+/*@keyframes staranim {*/
+
+/*    from {*/
+
+/*        clip-path: polygon(0 0%, 20% 15%, 40% 0%, 60% 15%, 80% 0%, 100% 15%, 90% 0%, 100% 15%, 80% 30%, 100% 45%,85% 70%, 100% 100%, 80% 85%, 60% 100%, 40% 85%, 20% 100%, 0% 85%, 10% 100%);*/
+
+/*    }*/
+
+/**/
+
+/*    50% {*/
+
+/*        clip-path: polygon(0% 15%, 20% 0%, 40% 15%, 60% 0%, 80% 15%, 100% 0%, 90% 15%, 100% 0%, 85% 30%, 100% 45%,85% 70%, 100% 100%, 85% 85%, 70% 100%, 55% 86%, 40% 100%, 25% 80%, 10% 100%);*/
+
+/**/
+
+/*    }*/
+
+/**/
+
+/*    to {*/
+
+/*        clip-path: polygon(0 0%, 20% 15%, 40% 0%, 60% 15%, 80% 0%, 100% 15%, 90% 0%, 100% 15%, 85% 30%, 100% 45%,85% 70%, 100% 100%, 85% 85%, 70% 100%, 55% 86%, 40% 100%, 25% 80%, 10% 100%);*/
+
+/*}*/
+
+/*}*/
+
+.yt-button img {
+  position: initial;
+  /*display: inline-block;*/
+  display: none;
+}
+
+.yt-urgency, .yt-eventtype {
+  display: none;
+}
+
+.liber-h h1 {
+  font-family: var(--wp--preset--font-family--carlson);
+  background-color: black;
+  display: inline-block;
+  text-transform: uppercase;
+  /*padding-right: 0.5em;*/
+  padding: 0.5em;
+  font-size: 2rem;
+}
+
+.liber-title {
+  background-color: black;
+  -webkit-clip-path: polygon(0 17%, 91% 8%, 100% 83%, 8% 91%);
+          clip-path: polygon(0 17%, 91% 8%, 100% 83%, 8% 91%);
+  font-family: var(--wp--preset--font-family--carlson);
+}
+
+.next-show-title {
+  text-align: center;
+}
+
+.next-show-title h2 {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0.5em 1em;
+  font-family: var(--wp--preset--font-family--carlson);
+  background-color: black;
+  font-size: 2rem;
+  --mask:
+            linear-gradient(#000 0 0) center/calc(100% - 12px) calc(100% - 12px) no-repeat,
+            conic-gradient(from  135deg at top   ,#0000,#000 1deg 89deg,#0000 90deg) 0 0   /12px 6px space no-repeat,
+            conic-gradient(from  -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 0 100%/12px 6px space no-repeat,
+            conic-gradient(from   45deg at left  ,#0000,#000 1deg 89deg,#0000 90deg) 0 0   /6px 12px no-repeat space,
+            conic-gradient(from -135deg at right ,#0000,#000 1deg 89deg,#0000 90deg) 100% 0/6px 12px no-repeat space;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+
+.chick {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  width: 10rem;
+  height: 10rem;
+  background-image: url('/wp-content/themes/theme-liber/img/chick.png');
+  background-size: 100%;
+  z-index: 1;
+}
+
+.test {
+  /*background: url('data:image/svg+xml;charset=UTF-8,<svg width="100pt" fill="white" height="100pt" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="m50 12.5l-7.8203 18.727-18.695-7.7422 7.7656 18.75-18.75 7.7656 18.75 7.7656-7.7656 18.75 18.695-7.8945 7.8203 18.879 7.7656-18.75 18.75 7.7656-7.7656-18.75 18.75-7.7656-18.75-7.7656 7.7656-18.75-18.75 7.7656z"/>    </svg>');*/
+  background: url('data:image/svg+xml;charset=UTF-8,<svg width="100pt" fill="white" height="100pt" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"> <circle cx="0" cy="0" r="40" stroke="black" stroke-width="3" fill="red" />    </svg>');
+  width: 10em;
+  height: 10em;
+  border: 8px solid red;
+  display: none;
 }
 
 body {

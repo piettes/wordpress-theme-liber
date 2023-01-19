@@ -1,0 +1,48 @@
+.liber-title {
+    background-color: black;
+    clip-path: polygon(0 17%, 91% 8%, 100% 83%, 8% 91%);
+    font-family: var(--wp--preset--font-family--carlson);
+}
+
+.next-show-title {
+    text-align: center;
+}
+
+.next-show-title h2 {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0.5em 1em;
+    font-family: var(--wp--preset--font-family--carlson);
+    background-color: black;
+    font-size: 2rem;
+
+    --mask:
+            linear-gradient(#000 0 0) center/calc(100% - 12px) calc(100% - 12px) no-repeat,
+            conic-gradient(from  135deg at top   ,#0000,#000 1deg 89deg,#0000 90deg) 0 0   /12px 6px space no-repeat,
+            conic-gradient(from  -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 0 100%/12px 6px space no-repeat,
+            conic-gradient(from   45deg at left  ,#0000,#000 1deg 89deg,#0000 90deg) 0 0   /6px 12px no-repeat space,
+            conic-gradient(from -135deg at right ,#0000,#000 1deg 89deg,#0000 90deg) 100% 0/6px 12px no-repeat space;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+}
+
+.chick {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    width: 10rem;
+    height: 10rem;
+    background-image: url('/wp-content/themes/theme-liber/img/chick.png');
+    background-size: 100%;
+    z-index: 1;
+}
+
+.test {
+    /*background: url('data:image/svg+xml;charset=UTF-8,<svg width="100pt" fill="white" height="100pt" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="m50 12.5l-7.8203 18.727-18.695-7.7422 7.7656 18.75-18.75 7.7656 18.75 7.7656-7.7656 18.75 18.695-7.8945 7.8203 18.879 7.7656-18.75 18.75 7.7656-7.7656-18.75 18.75-7.7656-18.75-7.7656 7.7656-18.75-18.75 7.7656z"/>    </svg>');*/
+    background: url('data:image/svg+xml;charset=UTF-8,<svg width="100pt" fill="white" height="100pt" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"> <circle cx="0" cy="0" r="40" stroke="black" stroke-width="3" fill="red" />    </svg>');
+    width: 10em;
+    height: 10em;
+    border: 8px solid red;
+    display: none;
+}
+

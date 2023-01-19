@@ -112,3 +112,20 @@ mt-8
 justify-center
 sm:justify-start
 lg:justify-start
+
+relative
+
+
+// Liber Calendar
+grid-cols-7
+grid-cols-5
+gap-1
+col-span-3
+col-span-5
+my-2
+bg-no-repeat
+bg-contain
+h-48
+text-justify
+flex-grow
+text-center
