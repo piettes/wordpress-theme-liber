@@ -1042,6 +1042,11 @@ video {
   text-align: justify;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
@@ -1508,14 +1513,50 @@ article > *:not(.entry-content),
   display: none;
 }
 
-.liber-h h1 {
+.liber-h {
   font-family: var(--wp--preset--font-family--carlson);
   background-color: black;
   display: inline-block;
   text-transform: uppercase;
-  /*padding-right: 0.5em;*/
-  padding: 0.5em;
-  font-size: 2rem;
+  z-index:5;
+}
+
+.players-h {
+  -webkit-clip-path: polygon(4% 17%, 100% 12%, 96% 83%, 0% 88%);
+          clip-path: polygon(4% 17%, 100% 12%, 96% 83%, 0% 88%);
+  padding: 1em;
+}
+
+.events-h {
+  -webkit-clip-path: polygon(4% 17%, 100% 12%, 96% 83%, 0% 88%);
+          clip-path: polygon(4% 17%, 100% 12%, 96% 83%, 0% 88%);
+  padding: 1em;
+}
+
+.chick-events {
+  position: absolute;
+  top: -35%;
+  left: 5%;
+  width: 10rem;
+  height: 10rem;
+  z-index: 1;
+  transform:scaleX(-1);
+}
+
+.chick {
+  background-image: url('/wp-content/themes/theme-liber/img/chick.png');
+  background-size: 100%;
+  z-index: 1;
+}
+
+.chick-players {
+  position: absolute;
+  top: -35%;
+  left: 5%;
+  width: 10rem;
+  height: 10rem;
+  z-index: 1;
+  transform:scaleX(-1);
 }
 
 .liber-title {
@@ -1546,15 +1587,12 @@ article > *:not(.entry-content),
   mask: var(--mask);
 }
 
-.chick {
+.chick-homepage {
   position: absolute;
   top: 50%;
   right: 10%;
   width: 10rem;
   height: 10rem;
-  background-image: url('/wp-content/themes/theme-liber/img/chick.png');
-  background-size: 100%;
-  z-index: 1;
 }
 
 .test {

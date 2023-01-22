@@ -26,15 +26,12 @@
     mask: var(--mask);
 }
 
-.chick {
+.chick-homepage {
     position: absolute;
     top: 50%;
     right: 10%;
     width: 10rem;
     height: 10rem;
-    background-image: url('/wp-content/themes/theme-liber/img/chick.png');
-    background-size: 100%;
-    z-index: 1;
 }
 
 .test {
@@ -45,4 +42,3 @@
     border: 8px solid red;
     display: none;
 }
-

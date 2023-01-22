@@ -44,10 +44,6 @@
   }
 }
 
-.absolute {
-  position: absolute
-}
-
 .relative {
   position: relative
 }
@@ -260,16 +256,8 @@
   flex-basis: 100%
 }
 
-.transform {
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
-}
-
 .cursor-pointer {
   cursor: pointer
-}
-
-.resize {
-  resize: both
 }
 
 .list-disc {
@@ -580,6 +568,11 @@
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem
 }
 
 .font-light {
